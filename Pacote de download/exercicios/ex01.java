@@ -6,14 +6,14 @@ import javax.swing.JOptionPane;
 public class ex01 {
     
     public static void main(String[] args) {
-        int resultado = 0;
+        float resultado = 0;
         int sair = 0;
         int cont = 1;
 
         do {
 
             String num = JOptionPane.showInputDialog(null, "Digite o "+cont+"º numero:");
-            int numDigi= Integer.parseInt(num);
+            float numDigi= Float.parseFloat(num);
             resultado = numDigi + resultado;
             cont ++;
             if(cont  > 2){
